@@ -182,7 +182,7 @@ function evolve(){
     while(newCreatures.length < populationSize){
         let parent = topCreatures[Math.floor(random()*topCreatures.length)];
         let childBrain = parent.brain.clone();
-        childBrain.mutate(0.00)
+        childBrain.mutate(0.1)
         let child = new Rocket(childBrain);
         newCreatures.push(child);
     }
@@ -229,5 +229,6 @@ function rot(){
 
 }
 setInterval(rot,1000/20)
+
 
 
