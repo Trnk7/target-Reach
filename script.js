@@ -104,7 +104,7 @@ class Rocket{
         let distance = Math.hypot(dx, dy);
         let targetAngle = Math.atan2(dy,dx)
         if(distance>30&&this.dead){
-        //    this.reset()
+           this.reset()
         }
         if(this.dead)return;
         let normDx = dx / (distance || 1);
@@ -229,4 +229,5 @@ function rot(){
 
 }
 setInterval(rot,1000/20)
+
 
