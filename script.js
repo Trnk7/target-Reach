@@ -228,4 +228,5 @@ function rot(){
     target.y = mouse.y + Math.cos(t)* 50
 
 }
-// setInterval(rot,1000/20)
+setInterval(rot,1000/20)
+
